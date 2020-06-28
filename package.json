@@ -1,0 +1,11 @@
+{
+  "name": "p3menu",
+  "version": "1.0.0",
+  "description": "Menu pour 4 restaurants",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

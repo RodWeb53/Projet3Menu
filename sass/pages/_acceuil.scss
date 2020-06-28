@@ -1,0 +1,42 @@
+main{
+  padding-bottom: 40px;
+}
+.menu-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+  &__carte{
+    width: 35%;
+    height: 600px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &--note{
+      @include acceuil-note;
+    }
+    &--chic{
+      background: $color-fond-chic;
+    }
+    &--delice{
+      background: $color-fond-delice;
+    }
+    &--palette{
+      background: $color-fond-palette;
+    }
+  }
+    
+}
+
+.prochain{
+  @include color-acceuil;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 1rem;
+  margin: auto;
+  border-radius: 10px;
+}

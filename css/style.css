@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  background: #579c88;
+  color: #fdcb38;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+.header__logo {
+  font-size: 3rem;
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  background: #579c88;
+  color: #fdcb38;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  padding: 1.3rem;
+  width: 100%;
+}
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__place {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  padding-bottom: 40px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+}
+.menu-list__carte {
+  width: 35%;
+  height: 600px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.menu-list__carte--note {
+  background: #ffdfdb;
+  font-family: "Devonshire", cursive;
+  font-size: 1.3rem;
+}
+.menu-list__carte--chic {
+  background: #fffafe;
+}
+.menu-list__carte--delice {
+  background: #f2f9ff;
+}
+.menu-list__carte--palette {
+  background: #f8fff8;
+}
+
+.prochain {
+  font-family: "Montserrat", sans-serif;
+  background: #579c88;
+  color: #fdcb38;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 1rem;
+  margin: auto;
+  border-radius: 10px;
+}
+.prochain a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*# sourceMappingURL=style.css.map */
