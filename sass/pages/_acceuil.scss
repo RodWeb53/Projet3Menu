@@ -8,9 +8,9 @@ main{
   justify-content: center;
   margin: 30px;
   &__carte{
-    width: 35%;
-    height: 600px;
-    margin: 30px;
+    width: 33%;
+    height: 800px;
+    margin: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,16 +19,29 @@ main{
       @include acceuil-note;
     }
     &--chic{
-      background: $color-fond-chic;
+      @include acceuil-chic;
     }
     &--delice{
-      background: $color-fond-delice;
+      @include acceuil-delice;
     }
     &--palette{
-      background: $color-fond-palette;
+      @include acceuil-palette;
     }
   }
     
+}
+
+
+.zoom 
+{
+    transform: scale(0.8);
+    opacity: 1;
+    transition: transform 300ms ease-in-out;
+    &:hover 
+    {
+        transform: scale(1);
+        opacity: 0.3;
+    }
 }
 
 .prochain{
@@ -37,6 +50,25 @@ main{
   justify-content: center;
   width: 30%;
   padding: 1rem;
+  font-size: 2rem;
   margin: auto;
   border-radius: 10px;
+ 
 }
+.chargement{
+    span {
+      display: inline-block;
+      animation: points 3s infinite ease-in-out;
+      font-size: 2rem;
+    }
+    .point2 {
+      animation-delay: 0.3s;
+    }
+    .point3 {
+      animation-delay: 0.6s;
+    }
+    .point4 {
+      animation-delay: 0.9s;  
+    }
+}
+

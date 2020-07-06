@@ -1,0 +1,13 @@
+//annimation des points de prochainement
+@keyframes points {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+//annimation mentions legales et contactez-nous
+@keyframes shake {
+  0% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  100% { transform: rotate(3deg); }
+}

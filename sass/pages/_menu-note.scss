@@ -1,0 +1,47 @@
+.titre{
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.page-note{
+  margin: auto;
+  @include centrage-colonne;
+  font-family: $font-page;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  background: $color-fond-note;
+  & h1{
+    margin: 20px;
+    font-family: $font-note;
+    font-size: 3rem;
+    color: $color-fonts-note;
+  }
+    & i{
+      @include degrade-note;
+      font-size: 5rem;
+    }
+    &__rubrique{
+      display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+      & .liseret-g {
+        @include taille-liseret-g;
+      }
+      & .liseret-d {
+        @include taille-liseret-d;
+      }
+    }
+}
+.ligne-menu{
+  font-family: $font-page;
+  & li{
+    display: inline-block;
+  flex-direction: row;
+  }
+    &__design{
+      width: 70%;
+      
+    }
+}

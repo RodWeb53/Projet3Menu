@@ -1,3 +1,4 @@
+//paramétrage des couleurs du header et footer des pages
 @mixin color_acceuil {
   font-family: $font-index;
   background: $color-bandeau;
@@ -9,8 +10,130 @@
     
 }
 
+//centrage des menus acceuil et agrandissemnt de la zone de zoom
+@mixin centrage-acceuil{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+//Decalage du titre menu et police de caractères
+@mixin menu-decalage($fonts){
+  font-family: $fonts;
+  font-weight: bold;
+  font-size: 5rem;
+  padding-top: 60px;
+}
+
+//Dégradé pour le logo note de musique
+@mixin degrade-note{
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(0.15turn, $color-note-deb, $color-note-fin);
+}
+
+//Dégradé pour les menu chic délice palette
+@mixin degrade-menu($fonts){
+  font-family: $fonts;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+
+
+//Paramétrage du menu note de la page d'acceuil
 @mixin acceuil-note {
   background: $color-fond-note;
   font-family: $font-note;
-  font-size: 1.3rem;
+  font-size: 3rem;
+  & a {
+    @include centrage-acceuil;
+    color: $color-fonts-note;
+    }
+    & i {
+      @include degrade-note;
+      }
+      & p{
+        @include menu-decalage($font-menu);
+        }
+}
+//Paramétrage du menu chic de la page d'acceuil
+@mixin acceuil-chic {
+  background: $color-fond-chic;
+  font-family: $font-chic;
+  font-size: 2rem;
+  & a {
+    @include centrage-acceuil;
+    }
+    & h2 {
+      @include degrade-menu($font-chic);
+      background-image: linear-gradient(0.3turn, $color-chic-deb 30%, $color-chic-fin 80%);
+      }
+      & p{
+        @include menu-decalage($font-chic);
+        color: $color-fonts-chic;
+        }
+}
+//Paramétrage du menu chic de la page d'acceuil
+@mixin acceuil-delice {
+  background: $color-fond-delice;
+  font-family: $font-delice;
+  font-size: 3rem;
+  & a {
+    @include centrage-acceuil;
+    color: $color-fonts-delice;
+    }
+    & p{
+      @include menu-decalage($font-menu);
+      }
+}
+//Paramétrage du menu palette de la page d'acceuil
+@mixin acceuil-palette {
+  background: $color-fond-palette;
+  font-family: $font-palette;
+  font-size: 3rem;
+  & a {
+    @include centrage-acceuil;
+    }
+    & h2 {
+      @include degrade-menu($font-palette);
+      background-image: linear-gradient(0.2turn, $color-palette-deb 20%, $color-palette-fin 80%);
+      }
+      & p{
+        color: $color-fonts-palette;
+        @include menu-decalage($font-menu);
+        }
+}
+
+//centrage flex colum center
+@mixin centrage-colonne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+//centrage des liseret + titre des rubrique
+@mixin liseret {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+//mise a la taille des liseret gauche
+@mixin taille-liseret-g {
+  width: 30%;
+  height: 6px;
+  display: inline-block;
+  margin: auto auto auto 0px;
+}
+//mise a la taille des liseret droit
+@mixin taille-liseret-d {
+  width: 30%;
+  height: 6px;
+  display: inline-block;
+  margin: auto 0px auto auto;
 }

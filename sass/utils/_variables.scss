@@ -8,9 +8,27 @@ $font-note: 'Devonshire', cursive;
 $font-chic: 'Source Serif Pro', serif;
 $font-delice: 'Dancing Script', cursive;
 $font-palette: 'Kaushan Script', cursive;
+$font-menu: 'Caveat', cursive;
+$font-page: 'Kalam', cursive;
 
 //déclaration couleur de fond des menus
 $color-fond-note: #ffdfdb;
 $color-fond-chic: #fffafe;
 $color-fond-delice: #f2f9ff;
 $color-fond-palette: #f8fff8;
+
+//Déclartion couleur dégradé de la note
+$color-note-deb: #e94e60;
+$color-note-fin: #f7ad7b;
+//Déclaration couleur dégradé de chic
+$color-chic-deb: #f86604;
+$color-chic-fin: #6204f8;
+//Déclaration couleur dégradé de palette
+$color-palette-deb: #12771a;
+$color-palette-fin: #9bf38b;
+
+//Déclaration des couleurs de fonts
+$color-fonts-note: #3c1218;
+$color-fonts-chic: #f86604;
+$color-fonts-delice: #0476f8;
+$color-fonts-palette: #12771a;
