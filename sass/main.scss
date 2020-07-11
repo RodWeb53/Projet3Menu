@@ -16,3 +16,15 @@
 a {
   text-decoration: none;
   }
+
+.categorie 
+{
+    display: inline-block;
+    text-decoration: none;
+    transition: $transition-souli;
+
+    &:hover
+    {
+        background-size: 100% 100%;
+    }
+}

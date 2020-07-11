@@ -1,6 +1,7 @@
 //paramétrage des couleurs du header et footer des pages
 @mixin color_acceuil {
   font-family: $font-index;
+  font-weight: bold;
   background: $color-bandeau;
   color: $color-text;
     a{
@@ -136,4 +137,62 @@
   height: 6px;
   display: inline-block;
   margin: auto 0px auto auto;
+}
+
+// soulignage
+@mixin souligne($background)
+{
+    background: linear-gradient(to top, $background 0%, $background 10%, transparent 10%) no-repeat left bottom / 0 100%;
+}
+
+
+//parametre commun sur les pages de menus
+@mixin titre{
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+@mixin menucouleur ($police, $couleur) {
+  margin: auto auto 20px auto;
+  font-family: $police;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  background: $couleur;
+}
+
+@mixin centragecategorie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+@mixin centragecontenue ($police){
+  font-family: $police;
+      font-size: 1.5rem;
+      width: 80%;
+      margin: auto auto 80px auto;
+      & ul{
+        padding-left: 0px;
+      }
+      & li{
+        display: inline-block;
+        flex-direction: row;
+        margin: 10px 0px 10px 0px;
+      }
+        &--design{
+          width: 79%;
+          text-align: left;
+        }
+        &--tarif{
+          width: 20%;
+          text-align: right;
+          font-weight: bold; 
+        }
+        &--designf{
+          width: 100%;
+          text-align: left;
+        }
 }

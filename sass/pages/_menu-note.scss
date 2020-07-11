@@ -1,21 +1,14 @@
 .titre{
-  text-align: center;
-  margin: 20px;
-  font-size: 1.5rem;
+  @include titre;
 }
 
 .page-note{
-  margin: auto;
   @include centrage-colonne;
-  font-family: $font-page;
-  width: 80%;
-  height: auto;
-  text-align: center;
-  background: $color-fond-note;
-  & h1{
+  @include menucouleur($font-page, $color-fond-note);
+  & h1, h3{
     margin: 20px;
     font-family: $font-note;
-    font-size: 3rem;
+    font-size: 4rem;
     color: $color-fonts-note;
   }
     & i{
@@ -23,9 +16,7 @@
       font-size: 5rem;
     }
     &__rubrique{
-      display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+      @include centragecategorie;
       & .liseret-g {
         @include taille-liseret-g;
       }
@@ -33,15 +24,10 @@
         @include taille-liseret-d;
       }
     }
-}
-.ligne-menu{
-  font-family: $font-page;
-  & li{
-    display: inline-block;
-  flex-direction: row;
-  }
-    &__design{
-      width: 70%;
-      
+    &__menu{
+      @include centragecontenue($font-page);
     }
+}
+.categorie__note{
+  @include souligne($color-fonts-note);
 }
