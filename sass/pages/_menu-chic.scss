@@ -9,7 +9,7 @@
   & h1{
     @include degrade-menu($font-chic);
     background-image: linear-gradient(0.3turn, $color-chic-deb 30%, $color-chic-fin 80%);
-    margin: 20px auto 80px auto;
+    margin: 20px 20px 80px 20px;
     font-size: 4rem;
   }
     &__rubrique{
@@ -31,7 +31,7 @@
       }
     }
     &__menu{
-      @include centragecontenue($font-chic);
+      @include centragecontenue($font-chic, 65%);
       &--part1 {
         color: $color-chic-deb;
       }

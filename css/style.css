@@ -152,6 +152,13 @@ main {
   height: 100%;
   color: #0476f8;
 }
+.menu-list__carte--delice h2 {
+  font-family: "Dancing Script", cursive;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(0.2turn, #1e07f1 20%, #268afc 80%);
+}
 .menu-list__carte--delice p {
   font-family: "Caveat", cursive;
   font-weight: bold;
@@ -332,7 +339,7 @@ main {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(0.3turn, #a8551e 30%, #6204f8 80%);
-  margin: 20px auto 80px auto;
+  margin: 20px 20px 80px 20px;
   font-size: 4rem;
 }
 .page-chic__rubrique {
@@ -366,7 +373,7 @@ main {
 .page-chic__menu {
   font-family: "Source Serif Pro", serif;
   font-size: 1.5rem;
-  width: 80%;
+  width: 65%;
   margin: auto auto 80px auto;
 }
 .page-chic__menu ul {
@@ -408,6 +415,92 @@ main {
 }
 .categorie__chic3 {
   background: linear-gradient(to top, #6204f8 0%, #6204f8 10%, transparent 10%) no-repeat left bottom/0 100%;
+}
+
+.titre {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.page-delice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto auto 20px auto;
+  font-family: "Kalam", cursive;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  background: #f2f9ff;
+}
+.page-delice h1 {
+  font-family: "Dancing Script", cursive;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(0.3turn, #1e07f1 30%, #268afc 80%);
+  margin: 80px 20px 80px 20px;
+  font-size: 4rem;
+}
+.page-delice__rubrique {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.page-delice__rubrique h3 {
+  font-weight: lighter;
+}
+.page-delice__rubrique .liseret-g {
+  width: 30%;
+  height: 15;
+  display: inline-block;
+  margin: auto auto auto 0px;
+}
+.page-delice__rubrique .liseret-d {
+  width: 30%;
+  height: 15;
+  display: inline-block;
+  margin: auto 0px auto auto;
+}
+.page-delice__menu {
+  font-family: "Kalam", cursive;
+  font-size: 1.5rem;
+  width: 65%;
+  margin: auto auto 80px auto;
+}
+.page-delice__menu ul {
+  padding-left: 0px;
+}
+.page-delice__menu li {
+  display: inline-block;
+  flex-direction: row;
+  margin: 20px 0px 20px 0px;
+}
+.page-delice__menu--design {
+  width: 79%;
+  text-align: left;
+}
+.page-delice__menu--tarif {
+  width: 20%;
+  text-align: right;
+  font-weight: bold;
+}
+.page-delice__menu--designf {
+  width: 100%;
+  text-align: left;
+}
+
+.categorie__delice1 {
+  background: linear-gradient(to top, #1e07f1 0%, #1e07f1 10%, transparent 10%) no-repeat left bottom/0 100%;
+}
+.categorie__delice2 {
+  background: linear-gradient(to top, #0367da 0%, #0367da 10%, transparent 10%) no-repeat left bottom/0 100%;
+}
+.categorie__delice3 {
+  background: linear-gradient(to top, #268afc 0%, #268afc 10%, transparent 10%) no-repeat left bottom/0 100%;
 }
 
 * {

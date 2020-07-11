@@ -78,7 +78,7 @@
         color: $color-fonts-chic;
         }
 }
-//Paramétrage du menu chic de la page d'acceuil
+//Paramétrage du menu delice de la page d'acceuil
 @mixin acceuil-delice {
   background: $color-fond-delice;
   font-family: $font-delice;
@@ -87,9 +87,13 @@
     @include centrage-acceuil;
     color: $color-fonts-delice;
     }
-    & p{
-      @include menu-decalage($font-menu);
+    & h2 {
+      @include degrade-menu($font-delice);
+      background-image: linear-gradient(0.2turn, $color-delice-deb 20%, $color-delice-fin 80%);
       }
+      & p{
+        @include menu-decalage($font-menu);
+        }
 }
 //Paramétrage du menu palette de la page d'acceuil
 @mixin acceuil-palette {
@@ -171,30 +175,30 @@
   margin-bottom: 50px;
 }
 //centrage des contenus
-@mixin centragecontenue ($police){
+@mixin centragecontenue ($police, $taille){
   font-family: $police;
-      font-size: 1.5rem;
-      width: 80%;
-      margin: auto auto 80px auto;
-      & ul{
-        padding-left: 0px;
-      }
-      & li{
-        display: inline-block;
-        flex-direction: row;
-        margin: 20px 0px 20px 0px;
-      }
-        &--design{
-          width: 79%;
-          text-align: left;
-        }
-        &--tarif{
-          width: 20%;
-          text-align: right;
-          font-weight: bold; 
-        }
-        &--designf{
-          width: 100%;
-          text-align: left;
-        }
+  font-size: 1.5rem;
+  width: $taille;
+  margin: auto auto 80px auto;
+  & ul{
+    padding-left: 0px;
+  }
+  & li{
+    display: inline-block;
+    flex-direction: row;
+    margin: 20px 0px 20px 0px;
+  }
+    &--design{
+      width: 79%;
+      text-align: left;
+    }
+    &--tarif{
+      width: 20%;
+      text-align: right;
+      font-weight: bold; 
+    }
+    &--designf{
+      width: 100%;
+      text-align: left;
+    }
 }

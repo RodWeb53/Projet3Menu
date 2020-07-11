@@ -25,7 +25,7 @@
       }
     }
     &__menu{
-      @include centragecontenue($font-page);
+      @include centragecontenue($font-page, 80%);
     }
 }
 .categorie__note{
