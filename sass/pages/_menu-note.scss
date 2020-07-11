@@ -18,10 +18,10 @@
     &__rubrique{
       @include centragecategorie;
       & .liseret-g {
-        @include taille-liseret-g;
+        @include taille-liseret-g(6);
       }
       & .liseret-d {
-        @include taille-liseret-d;
+        @include taille-liseret-d(6);
       }
     }
     &__menu{

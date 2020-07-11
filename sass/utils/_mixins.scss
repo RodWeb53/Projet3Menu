@@ -125,34 +125,35 @@
 }
 
 //mise a la taille des liseret gauche
-@mixin taille-liseret-g {
+@mixin taille-liseret-g($taille) {
   width: 30%;
-  height: 6px;
+  height: $taille;
   display: inline-block;
   margin: auto auto auto 0px;
 }
 //mise a la taille des liseret droit
-@mixin taille-liseret-d {
+@mixin taille-liseret-d($taille) {
   width: 30%;
-  height: 6px;
+  height: $taille;
   display: inline-block;
   margin: auto 0px auto auto;
 }
 
+
 // soulignage
-@mixin souligne($background)
-{
+@mixin souligne($background) {
     background: linear-gradient(to top, $background 0%, $background 10%, transparent 10%) no-repeat left bottom / 0 100%;
 }
 
 
 //parametre commun sur les pages de menus
+//centrage du titre principale
 @mixin titre{
   text-align: center;
   margin: 20px;
   font-size: 1.5rem;
 }
-
+//centrage du titre dans le menu
 @mixin menucouleur ($police, $couleur) {
   margin: auto auto 20px auto;
   font-family: $police;
@@ -161,14 +162,15 @@
   text-align: center;
   background: $couleur;
 }
-
+//centrage des categories
 @mixin centragecategorie {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 1.5rem;
+  margin-bottom: 50px;
 }
-
+//centrage des contenus
 @mixin centragecontenue ($police){
   font-family: $police;
       font-size: 1.5rem;
@@ -180,7 +182,7 @@
       & li{
         display: inline-block;
         flex-direction: row;
-        margin: 10px 0px 10px 0px;
+        margin: 20px 0px 20px 0px;
       }
         &--design{
           width: 79%;

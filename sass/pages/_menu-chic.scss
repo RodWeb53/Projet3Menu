@@ -1,0 +1,57 @@
+.titre{
+  @include titre;
+}
+
+.page-chic{
+  @include centrage-colonne;
+  @include menucouleur($font-chic, $color-fond-chic);
+  
+  & h1{
+    @include degrade-menu($font-chic);
+    background-image: linear-gradient(0.3turn, $color-chic-deb 30%, $color-chic-fin 80%);
+    margin: 20px auto 80px auto;
+    font-size: 4rem;
+  }
+    &__rubrique{
+      @include centragecategorie;
+      & .liseret-g {
+        @include taille-liseret-g(15);
+      }
+      & .liseret-d {
+        @include taille-liseret-d(15);
+      }
+      &--part1 {
+        color: $color-chic-deb;
+      }
+      &--part2 {
+        color: $color-chic-int;
+      }
+      &--part3 {
+        color: $color-chic-fin;
+      }
+    }
+    &__menu{
+      @include centragecontenue($font-chic);
+      &--part1 {
+        color: $color-chic-deb;
+      }
+      &--part2 {
+        color: $color-chic-int;
+      }
+      &--part3 {
+        color: $color-chic-fin;
+      }
+    }
+
+}
+.categorie{
+  &__chic1{
+  @include souligne($color-chic-deb);
+  }
+  &__chic2{
+  @include souligne($color-chic-int);
+  }
+  &__chic3{
+  @include souligne($color-chic-fin);
+  }
+}

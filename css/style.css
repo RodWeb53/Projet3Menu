@@ -130,14 +130,14 @@ main {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(0.3turn, #f86604 30%, #6204f8 80%);
+  background-image: linear-gradient(0.3turn, #a8551e 30%, #6204f8 80%);
 }
 .menu-list__carte--chic p {
   font-family: "Source Serif Pro", serif;
   font-weight: bold;
   font-size: 5rem;
   padding-top: 60px;
-  color: #f86604;
+  color: #af612d;
 }
 .menu-list__carte--delice {
   background: #f2f9ff;
@@ -263,16 +263,17 @@ main {
   flex-direction: row;
   justify-content: space-between;
   font-size: 1.5rem;
+  margin-bottom: 50px;
 }
 .page-note__rubrique .liseret-g {
   width: 30%;
-  height: 6px;
+  height: 6;
   display: inline-block;
   margin: auto auto auto 0px;
 }
 .page-note__rubrique .liseret-d {
   width: 30%;
-  height: 6px;
+  height: 6;
   display: inline-block;
   margin: auto 0px auto auto;
 }
@@ -288,7 +289,7 @@ main {
 .page-note__menu li {
   display: inline-block;
   flex-direction: row;
-  margin: 10px 0px 10px 0px;
+  margin: 20px 0px 20px 0px;
 }
 .page-note__menu--design {
   width: 79%;
@@ -306,6 +307,107 @@ main {
 
 .categorie__note {
   background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10%) no-repeat left bottom/0 100%;
+}
+
+.titre {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.page-chic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto auto 20px auto;
+  font-family: "Source Serif Pro", serif;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  background: #fffafe;
+}
+.page-chic h1 {
+  font-family: "Source Serif Pro", serif;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(0.3turn, #a8551e 30%, #6204f8 80%);
+  margin: 20px auto 80px auto;
+  font-size: 4rem;
+}
+.page-chic__rubrique {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.page-chic__rubrique .liseret-g {
+  width: 30%;
+  height: 15;
+  display: inline-block;
+  margin: auto auto auto 0px;
+}
+.page-chic__rubrique .liseret-d {
+  width: 30%;
+  height: 15;
+  display: inline-block;
+  margin: auto 0px auto auto;
+}
+.page-chic__rubrique--part1 {
+  color: #a8551e;
+}
+.page-chic__rubrique--part2 {
+  color: #b90dfd;
+}
+.page-chic__rubrique--part3 {
+  color: #6204f8;
+}
+.page-chic__menu {
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.5rem;
+  width: 80%;
+  margin: auto auto 80px auto;
+}
+.page-chic__menu ul {
+  padding-left: 0px;
+}
+.page-chic__menu li {
+  display: inline-block;
+  flex-direction: row;
+  margin: 20px 0px 20px 0px;
+}
+.page-chic__menu--design {
+  width: 79%;
+  text-align: left;
+}
+.page-chic__menu--tarif {
+  width: 20%;
+  text-align: right;
+  font-weight: bold;
+}
+.page-chic__menu--designf {
+  width: 100%;
+  text-align: left;
+}
+.page-chic__menu--part1 {
+  color: #a8551e;
+}
+.page-chic__menu--part2 {
+  color: #b90dfd;
+}
+.page-chic__menu--part3 {
+  color: #6204f8;
+}
+
+.categorie__chic1 {
+  background: linear-gradient(to top, #a8551e 0%, #a8551e 10%, transparent 10%) no-repeat left bottom/0 100%;
+}
+.categorie__chic2 {
+  background: linear-gradient(to top, #b90dfd 0%, #b90dfd 10%, transparent 10%) no-repeat left bottom/0 100%;
+}
+.categorie__chic3 {
+  background: linear-gradient(to top, #6204f8 0%, #6204f8 10%, transparent 10%) no-repeat left bottom/0 100%;
 }
 
 * {
