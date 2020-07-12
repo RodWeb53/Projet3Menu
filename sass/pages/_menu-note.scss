@@ -1,5 +1,5 @@
 .titre{
-  @include titre;
+  @include titre (1.5vw);
 }
 
 .page-note{
@@ -16,7 +16,7 @@
       font-size: 5rem;
     }
     &__rubrique{
-      @include centragecategorie;
+      @include centragecategorie (1.5vw, 50px);
       & .liseret-g {
         @include taille-liseret-g(6);
       }
@@ -25,9 +25,68 @@
       }
     }
     &__menu{
-      @include centragecontenue($font-page, 80%);
+      @include centragecontenue($font-page, 87%, 1.5vw);
     }
 }
 .categorie__note{
   @include souligne($color-fonts-note);
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .page-note{
+    & h1, h3{
+      margin: 60px 10px 60px 10px;
+      font-size: 7vw;
+    }
+    & i{
+      @include degrade-note;
+      font-size: 4.5rem;
+    }
+    &__rubrique{
+      @include centragecategorie (2vw, 40px);
+    }
+    &__menu{
+      @include centragecontenue ($font-page, 85%, 2vw);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .page-note{
+    & h1, h3{
+      margin: 40px 10px 40px 10px;
+      font-size: 6vw;
+    }
+    & i{
+      @include degrade-note;
+      font-size: 3rem;
+    }
+    &__rubrique{
+      @include centragecategorie (2vw, 20px);
+    }
+    &__menu{
+      @include centragecontenue ($font-page, 85%, 3vw);
+    }
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .page-note{
+    & h1, h3{
+      margin: 40px 10px 40px 10px;
+      font-size: 6vw;
+    }
+    & i{
+      @include degrade-note;
+      font-size: 3rem;
+    }
+    &__rubrique{
+      @include centragecategorie (2vw, 20px);
+    }
+    &__menu{
+      @include centragecontenuem ($font-page, 100%, 3vw);
+    }
+  }
+}
+

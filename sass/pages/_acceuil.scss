@@ -15,18 +15,20 @@ main{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    
     &--note{
-      @include acceuil-note;
+      @include acceuil-note(2.5vw);
     }
     &--chic{
-      @include acceuil-chic;
+      @include acceuil-chic(2vw);
     }
     &--delice{
-      @include acceuil-delice;
+      @include acceuil-delice(2.5vw);
     }
     &--palette{
-      @include acceuil-palette;
+      @include acceuil-palette(2.5vw);
     }
+    
   }
     
 }
@@ -71,4 +73,92 @@ main{
       animation-delay: 0.9s;  
     }
 }
+//media queries pour les écrans de 1024 à 1439
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .menu-list {
+      margin: 15px;
+      &__carte{
+      width: 40%;
+      height: 700px;
+      margin: 20px;
+      &--note{
+        @include acceuil-note(3vw);
+      }
+      &--chic{
+        @include acceuil-chic(2.4vw);
+      }
+      &--delice{
+        @include acceuil-delice(3vw);
+      }
+      &--palette{
+        @include acceuil-palette(3vw);
+      }
+    }
+  }
+  .prochain{
+    width: 30%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
 
+}
+//media queries pour les écrans de 768 à 1023
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu-list {
+      margin: 15px;
+      &__carte{
+      width: 40%;
+      height: 600px;
+      margin: 20px;
+      &--note{
+        @include acceuil-note(3vw);
+      }
+      &--chic{
+        @include acceuil-chic(2vw);
+      }
+      &--delice{
+        @include acceuil-delice(3vw);
+      }
+      &--palette{
+        @include acceuil-palette(3vw);
+      }
+    }
+  }
+  .prochain{
+    width: 30%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+
+}
+//media queries pour les écrans inférieur à 768 pixels
+@media only screen and (max-width: 767px) {
+  .menu-list {
+    flex-direction: column;  
+    &__carte{
+      width: 90%;
+      height: 500px;
+      margin: 20px;
+      &--note{
+        @include acceuil-note(6vw);
+      }
+      &--chic{
+        @include acceuil-chic(5vw);
+      }
+      &--delice{
+        @include acceuil-delice(6vw);
+      }
+      &--palette{
+        @include acceuil-palette(6vw);
+      }
+    }
+  }
+  .prochain{
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+}

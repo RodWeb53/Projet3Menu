@@ -43,6 +43,11 @@
   font-size: 3rem;
 }
 
+@media only screen and (max-width: 425px) {
+  .header__logo {
+    font-size: 2.4rem;
+  }
+}
 .footer {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -91,7 +96,7 @@ main {
 .menu-list__carte--note {
   background: #ffdfdb;
   font-family: "Devonshire", cursive;
-  font-size: 3rem;
+  font-size: 2.5vw;
 }
 .menu-list__carte--note a {
   display: flex;
@@ -110,13 +115,13 @@ main {
 .menu-list__carte--note p {
   font-family: "Caveat", cursive;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 5vw;
   padding-top: 60px;
 }
 .menu-list__carte--chic {
   background: #fffafe;
   font-family: "Source Serif Pro", serif;
-  font-size: 2rem;
+  font-size: 2vw;
 }
 .menu-list__carte--chic a {
   display: flex;
@@ -135,14 +140,14 @@ main {
 .menu-list__carte--chic p {
   font-family: "Source Serif Pro", serif;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4vw;
   padding-top: 60px;
   color: #af612d;
 }
 .menu-list__carte--delice {
   background: #f2f9ff;
   font-family: "Dancing Script", cursive;
-  font-size: 3rem;
+  font-size: 2.5vw;
 }
 .menu-list__carte--delice a {
   display: flex;
@@ -162,13 +167,13 @@ main {
 .menu-list__carte--delice p {
   font-family: "Caveat", cursive;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 5vw;
   padding-top: 60px;
 }
 .menu-list__carte--palette {
   background: #f8fff8;
   font-family: "Kaushan Script", cursive;
-  font-size: 3rem;
+  font-size: 2.5vw;
 }
 .menu-list__carte--palette a {
   display: flex;
@@ -188,7 +193,7 @@ main {
   color: #12771a;
   font-family: "Caveat", cursive;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 5vw;
   padding-top: 60px;
 }
 
@@ -235,10 +240,370 @@ main {
   animation-delay: 0.9s;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .menu-list {
+    margin: 15px;
+  }
+  .menu-list__carte {
+    width: 40%;
+    height: 700px;
+    margin: 20px;
+  }
+  .menu-list__carte--note {
+    background: #ffdfdb;
+    font-family: "Devonshire", cursive;
+    font-size: 3vw;
+  }
+  .menu-list__carte--note a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #3c1218;
+  }
+  .menu-list__carte--note i {
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.15turn, #e94e60, #f7ad7b);
+  }
+  .menu-list__carte--note p {
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    font-size: 6vw;
+    padding-top: 60px;
+  }
+  .menu-list__carte--chic {
+    background: #fffafe;
+    font-family: "Source Serif Pro", serif;
+    font-size: 2.4vw;
+  }
+  .menu-list__carte--chic a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .menu-list__carte--chic h2 {
+    font-family: "Source Serif Pro", serif;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.3turn, #a8551e 30%, #6204f8 80%);
+  }
+  .menu-list__carte--chic p {
+    font-family: "Source Serif Pro", serif;
+    font-weight: bold;
+    font-size: 4.8vw;
+    padding-top: 60px;
+    color: #af612d;
+  }
+  .menu-list__carte--delice {
+    background: #f2f9ff;
+    font-family: "Dancing Script", cursive;
+    font-size: 3vw;
+  }
+  .menu-list__carte--delice a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #0476f8;
+  }
+  .menu-list__carte--delice h2 {
+    font-family: "Dancing Script", cursive;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.2turn, #1e07f1 20%, #268afc 80%);
+  }
+  .menu-list__carte--delice p {
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    font-size: 6vw;
+    padding-top: 60px;
+  }
+  .menu-list__carte--palette {
+    background: #f8fff8;
+    font-family: "Kaushan Script", cursive;
+    font-size: 3vw;
+  }
+  .menu-list__carte--palette a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .menu-list__carte--palette h2 {
+    font-family: "Kaushan Script", cursive;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.2turn, #12771a 20%, #9bf38b 80%);
+  }
+  .menu-list__carte--palette p {
+    color: #12771a;
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    font-size: 6vw;
+    padding-top: 60px;
+  }
+
+  .prochain {
+    width: 30%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu-list {
+    margin: 15px;
+  }
+  .menu-list__carte {
+    width: 40%;
+    height: 600px;
+    margin: 20px;
+  }
+  .menu-list__carte--note {
+    background: #ffdfdb;
+    font-family: "Devonshire", cursive;
+    font-size: 3vw;
+  }
+  .menu-list__carte--note a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #3c1218;
+  }
+  .menu-list__carte--note i {
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.15turn, #e94e60, #f7ad7b);
+  }
+  .menu-list__carte--note p {
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    font-size: 6vw;
+    padding-top: 60px;
+  }
+  .menu-list__carte--chic {
+    background: #fffafe;
+    font-family: "Source Serif Pro", serif;
+    font-size: 2vw;
+  }
+  .menu-list__carte--chic a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .menu-list__carte--chic h2 {
+    font-family: "Source Serif Pro", serif;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.3turn, #a8551e 30%, #6204f8 80%);
+  }
+  .menu-list__carte--chic p {
+    font-family: "Source Serif Pro", serif;
+    font-weight: bold;
+    font-size: 4vw;
+    padding-top: 60px;
+    color: #af612d;
+  }
+  .menu-list__carte--delice {
+    background: #f2f9ff;
+    font-family: "Dancing Script", cursive;
+    font-size: 3vw;
+  }
+  .menu-list__carte--delice a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #0476f8;
+  }
+  .menu-list__carte--delice h2 {
+    font-family: "Dancing Script", cursive;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.2turn, #1e07f1 20%, #268afc 80%);
+  }
+  .menu-list__carte--delice p {
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    font-size: 6vw;
+    padding-top: 60px;
+  }
+  .menu-list__carte--palette {
+    background: #f8fff8;
+    font-family: "Kaushan Script", cursive;
+    font-size: 3vw;
+  }
+  .menu-list__carte--palette a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .menu-list__carte--palette h2 {
+    font-family: "Kaushan Script", cursive;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.2turn, #12771a 20%, #9bf38b 80%);
+  }
+  .menu-list__carte--palette p {
+    color: #12771a;
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    font-size: 6vw;
+    padding-top: 60px;
+  }
+
+  .prochain {
+    width: 30%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .menu-list {
+    flex-direction: column;
+  }
+  .menu-list__carte {
+    width: 90%;
+    height: 500px;
+    margin: 20px;
+  }
+  .menu-list__carte--note {
+    background: #ffdfdb;
+    font-family: "Devonshire", cursive;
+    font-size: 6vw;
+  }
+  .menu-list__carte--note a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #3c1218;
+  }
+  .menu-list__carte--note i {
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.15turn, #e94e60, #f7ad7b);
+  }
+  .menu-list__carte--note p {
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    font-size: 12vw;
+    padding-top: 60px;
+  }
+  .menu-list__carte--chic {
+    background: #fffafe;
+    font-family: "Source Serif Pro", serif;
+    font-size: 5vw;
+  }
+  .menu-list__carte--chic a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .menu-list__carte--chic h2 {
+    font-family: "Source Serif Pro", serif;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.3turn, #a8551e 30%, #6204f8 80%);
+  }
+  .menu-list__carte--chic p {
+    font-family: "Source Serif Pro", serif;
+    font-weight: bold;
+    font-size: 10vw;
+    padding-top: 60px;
+    color: #af612d;
+  }
+  .menu-list__carte--delice {
+    background: #f2f9ff;
+    font-family: "Dancing Script", cursive;
+    font-size: 6vw;
+  }
+  .menu-list__carte--delice a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #0476f8;
+  }
+  .menu-list__carte--delice h2 {
+    font-family: "Dancing Script", cursive;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.2turn, #1e07f1 20%, #268afc 80%);
+  }
+  .menu-list__carte--delice p {
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    font-size: 12vw;
+    padding-top: 60px;
+  }
+  .menu-list__carte--palette {
+    background: #f8fff8;
+    font-family: "Kaushan Script", cursive;
+    font-size: 6vw;
+  }
+  .menu-list__carte--palette a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .menu-list__carte--palette h2 {
+    font-family: "Kaushan Script", cursive;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.2turn, #12771a 20%, #9bf38b 80%);
+  }
+  .menu-list__carte--palette p {
+    color: #12771a;
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    font-size: 12vw;
+    padding-top: 60px;
+  }
+
+  .prochain {
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+}
 .titre {
   text-align: center;
   margin: 20px;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 .page-note {
@@ -269,7 +634,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   margin-bottom: 50px;
 }
 .page-note__rubrique .liseret-g {
@@ -286,8 +651,8 @@ main {
 }
 .page-note__menu {
   font-family: "Kalam", cursive;
-  font-size: 1.5rem;
-  width: 80%;
+  font-size: 1.5vw;
+  width: 87%;
   margin: auto auto 80px auto;
 }
 .page-note__menu ul {
@@ -299,16 +664,16 @@ main {
   margin: 20px 0px 20px 0px;
 }
 .page-note__menu--design {
-  width: 79%;
+  width: 80%;
   text-align: left;
 }
 .page-note__menu--tarif {
-  width: 20%;
+  width: 10%;
   text-align: right;
   font-weight: bold;
 }
 .page-note__menu--designf {
-  width: 100%;
+  width: 90%;
   text-align: left;
 }
 
@@ -316,10 +681,153 @@ main {
   background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10%) no-repeat left bottom/0 100%;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .page-note h1, .page-note h3 {
+    margin: 60px 10px 60px 10px;
+    font-size: 7vw;
+  }
+  .page-note i {
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.15turn, #e94e60, #f7ad7b);
+    font-size: 4.5rem;
+  }
+  .page-note__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2vw;
+    margin-bottom: 40px;
+  }
+  .page-note__menu {
+    font-family: "Kalam", cursive;
+    font-size: 2vw;
+    width: 85%;
+    margin: auto auto 80px auto;
+  }
+  .page-note__menu ul {
+    padding-left: 0px;
+  }
+  .page-note__menu li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 20px 0px 20px 0px;
+  }
+  .page-note__menu--design {
+    width: 80%;
+    text-align: left;
+  }
+  .page-note__menu--tarif {
+    width: 10%;
+    text-align: right;
+    font-weight: bold;
+  }
+  .page-note__menu--designf {
+    width: 90%;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .page-note h1, .page-note h3 {
+    margin: 40px 10px 40px 10px;
+    font-size: 6vw;
+  }
+  .page-note i {
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.15turn, #e94e60, #f7ad7b);
+    font-size: 3rem;
+  }
+  .page-note__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2vw;
+    margin-bottom: 20px;
+  }
+  .page-note__menu {
+    font-family: "Kalam", cursive;
+    font-size: 3vw;
+    width: 85%;
+    margin: auto auto 80px auto;
+  }
+  .page-note__menu ul {
+    padding-left: 0px;
+  }
+  .page-note__menu li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 20px 0px 20px 0px;
+  }
+  .page-note__menu--design {
+    width: 80%;
+    text-align: left;
+  }
+  .page-note__menu--tarif {
+    width: 10%;
+    text-align: right;
+    font-weight: bold;
+  }
+  .page-note__menu--designf {
+    width: 90%;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-note h1, .page-note h3 {
+    margin: 40px 10px 40px 10px;
+    font-size: 6vw;
+  }
+  .page-note i {
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(0.15turn, #e94e60, #f7ad7b);
+    font-size: 3rem;
+  }
+  .page-note__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2vw;
+    margin-bottom: 20px;
+  }
+  .page-note__menu {
+    font-family: "Kalam", cursive;
+    font-size: 3vw;
+    width: 100%;
+    margin: auto auto 40px auto;
+  }
+  .page-note__menu ul {
+    padding-left: 0px;
+  }
+  .page-note__menu li {
+    display: inline-block;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .page-note__menu--design {
+    width: 80%;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+  }
+  .page-note__menu--tarif {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+  .page-note__menu--designf {
+    width: 90%;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+  }
+}
 .titre {
   text-align: center;
   margin: 20px;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 .page-chic {
@@ -346,7 +854,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   margin-bottom: 50px;
 }
 .page-chic__rubrique .liseret-g {
@@ -372,8 +880,8 @@ main {
 }
 .page-chic__menu {
   font-family: "Source Serif Pro", serif;
-  font-size: 1.5rem;
-  width: 65%;
+  font-size: 1.4vw;
+  width: 70%;
   margin: auto auto 80px auto;
 }
 .page-chic__menu ul {
@@ -385,16 +893,16 @@ main {
   margin: 20px 0px 20px 0px;
 }
 .page-chic__menu--design {
-  width: 79%;
+  width: 80%;
   text-align: left;
 }
 .page-chic__menu--tarif {
-  width: 20%;
+  width: 10%;
   text-align: right;
   font-weight: bold;
 }
 .page-chic__menu--designf {
-  width: 100%;
+  width: 90%;
   text-align: left;
 }
 .page-chic__menu--part1 {
@@ -417,10 +925,132 @@ main {
   background: linear-gradient(to top, #6204f8 0%, #6204f8 10%, transparent 10%) no-repeat left bottom/0 100%;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .page-chic h1 {
+    margin: 60px 10px 60px 10px;
+    font-size: 4.5vw;
+  }
+  .page-chic__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.7vw;
+    margin-bottom: 40px;
+  }
+  .page-chic__menu {
+    font-family: "Source Serif Pro", serif;
+    font-size: 2vw;
+    width: 70%;
+    margin: auto auto 80px auto;
+  }
+  .page-chic__menu ul {
+    padding-left: 0px;
+  }
+  .page-chic__menu li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 20px 0px 20px 0px;
+  }
+  .page-chic__menu--design {
+    width: 80%;
+    text-align: left;
+  }
+  .page-chic__menu--tarif {
+    width: 10%;
+    text-align: right;
+    font-weight: bold;
+  }
+  .page-chic__menu--designf {
+    width: 90%;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .page-chic h1 {
+    margin: 40px 10px 40px 10px;
+    font-size: 6vw;
+  }
+  .page-chic__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.8vw;
+    margin-bottom: 20px;
+  }
+  .page-chic__menu {
+    font-family: "Source Serif Pro", serif;
+    font-size: 2vw;
+    width: 70%;
+    margin: auto auto 80px auto;
+  }
+  .page-chic__menu ul {
+    padding-left: 0px;
+  }
+  .page-chic__menu li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 20px 0px 20px 0px;
+  }
+  .page-chic__menu--design {
+    width: 80%;
+    text-align: left;
+  }
+  .page-chic__menu--tarif {
+    width: 10%;
+    text-align: right;
+    font-weight: bold;
+  }
+  .page-chic__menu--designf {
+    width: 90%;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-chic h1 {
+    margin: 40px 10px 40px 10px;
+    font-size: 5vw;
+  }
+  .page-chic__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.8vw;
+    margin-bottom: 20px;
+  }
+  .page-chic__menu {
+    font-family: "Source Serif Pro", serif;
+    font-size: 2.3vw;
+    width: 100%;
+    margin: auto auto 40px auto;
+  }
+  .page-chic__menu ul {
+    padding-left: 0px;
+  }
+  .page-chic__menu li {
+    display: inline-block;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .page-chic__menu--design {
+    width: 80%;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+  }
+  .page-chic__menu--tarif {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+  .page-chic__menu--designf {
+    width: 90%;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+  }
+}
 .titre {
   text-align: center;
   margin: 20px;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 .page-delice {
@@ -447,7 +1077,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   margin-bottom: 50px;
 }
 .page-delice__rubrique h3 {
@@ -467,8 +1097,8 @@ main {
 }
 .page-delice__menu {
   font-family: "Kalam", cursive;
-  font-size: 1.5rem;
-  width: 65%;
+  font-size: 1.3vw;
+  width: 70%;
   margin: auto auto 80px auto;
 }
 .page-delice__menu ul {
@@ -480,16 +1110,16 @@ main {
   margin: 20px 0px 20px 0px;
 }
 .page-delice__menu--design {
-  width: 79%;
+  width: 80%;
   text-align: left;
 }
 .page-delice__menu--tarif {
-  width: 20%;
+  width: 10%;
   text-align: right;
   font-weight: bold;
 }
 .page-delice__menu--designf {
-  width: 100%;
+  width: 90%;
   text-align: left;
 }
 
@@ -503,10 +1133,132 @@ main {
   background: linear-gradient(to top, #268afc 0%, #268afc 10%, transparent 10%) no-repeat left bottom/0 100%;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .page-delice h1 {
+    margin: 60px 10px 60px 10px;
+    font-size: 5vw;
+  }
+  .page-delice__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2vw;
+    margin-bottom: 40px;
+  }
+  .page-delice__menu {
+    font-family: "Kalam", cursive;
+    font-size: 2vw;
+    width: 70%;
+    margin: auto auto 80px auto;
+  }
+  .page-delice__menu ul {
+    padding-left: 0px;
+  }
+  .page-delice__menu li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 20px 0px 20px 0px;
+  }
+  .page-delice__menu--design {
+    width: 80%;
+    text-align: left;
+  }
+  .page-delice__menu--tarif {
+    width: 10%;
+    text-align: right;
+    font-weight: bold;
+  }
+  .page-delice__menu--designf {
+    width: 90%;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .page-delice h1 {
+    margin: 40px 10px 40px 10px;
+    font-size: 5vw;
+  }
+  .page-delice__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2.4vw;
+    margin-bottom: 20px;
+  }
+  .page-delice__menu {
+    font-family: "Kalam", cursive;
+    font-size: 2.5vw;
+    width: 70%;
+    margin: auto auto 80px auto;
+  }
+  .page-delice__menu ul {
+    padding-left: 0px;
+  }
+  .page-delice__menu li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 20px 0px 20px 0px;
+  }
+  .page-delice__menu--design {
+    width: 80%;
+    text-align: left;
+  }
+  .page-delice__menu--tarif {
+    width: 10%;
+    text-align: right;
+    font-weight: bold;
+  }
+  .page-delice__menu--designf {
+    width: 90%;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-delice h1 {
+    margin: 40px 10px 40px 10px;
+    font-size: 6vw;
+  }
+  .page-delice__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2.2vw;
+    margin-bottom: 20px;
+  }
+  .page-delice__menu {
+    font-family: "Kalam", cursive;
+    font-size: 2.5vw;
+    width: 100%;
+    margin: auto auto 40px auto;
+  }
+  .page-delice__menu ul {
+    padding-left: 0px;
+  }
+  .page-delice__menu li {
+    display: inline-block;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .page-delice__menu--design {
+    width: 80%;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+  }
+  .page-delice__menu--tarif {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+  .page-delice__menu--designf {
+    width: 90%;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+  }
+}
 .titre {
   text-align: center;
   margin: 20px;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 .page-palette {
@@ -527,13 +1279,13 @@ main {
   color: transparent;
   background-image: linear-gradient(0.3turn, #12771a 30%, #9bf38b 80%);
   margin: 80px 20px 80px 20px;
-  font-size: 4rem;
+  font-size: 5vw;
 }
 .page-palette__rubrique {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 2vw;
   margin-bottom: 50px;
 }
 .page-palette__rubrique h3 {
@@ -553,8 +1305,8 @@ main {
 }
 .page-palette__menu {
   font-family: "Kalam", cursive;
-  font-size: 1.5rem;
-  width: 65%;
+  font-size: 1.4vw;
+  width: 70%;
   margin: auto auto 80px auto;
 }
 .page-palette__menu ul {
@@ -566,16 +1318,16 @@ main {
   margin: 20px 0px 20px 0px;
 }
 .page-palette__menu--design {
-  width: 79%;
+  width: 80%;
   text-align: left;
 }
 .page-palette__menu--tarif {
-  width: 20%;
+  width: 10%;
   text-align: right;
   font-weight: bold;
 }
 .page-palette__menu--designf {
-  width: 100%;
+  width: 90%;
   text-align: left;
 }
 
@@ -589,6 +1341,128 @@ main {
   background: linear-gradient(to top, #9bf38b 0%, #9bf38b 10%, transparent 10%) no-repeat left bottom/0 100%;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .page-palette h1 {
+    margin: 60px 10px 60px 10px;
+    font-size: 5vw;
+  }
+  .page-palette__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2vw;
+    margin-bottom: 40px;
+  }
+  .page-palette__menu {
+    font-family: "Kalam", cursive;
+    font-size: 2vw;
+    width: 70%;
+    margin: auto auto 80px auto;
+  }
+  .page-palette__menu ul {
+    padding-left: 0px;
+  }
+  .page-palette__menu li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 20px 0px 20px 0px;
+  }
+  .page-palette__menu--design {
+    width: 80%;
+    text-align: left;
+  }
+  .page-palette__menu--tarif {
+    width: 10%;
+    text-align: right;
+    font-weight: bold;
+  }
+  .page-palette__menu--designf {
+    width: 90%;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .page-palette h1 {
+    margin: 40px 10px 40px 10px;
+    font-size: 5vw;
+  }
+  .page-palette__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2.4vw;
+    margin-bottom: 20px;
+  }
+  .page-palette__menu {
+    font-family: "Kalam", cursive;
+    font-size: 2.5vw;
+    width: 70%;
+    margin: auto auto 80px auto;
+  }
+  .page-palette__menu ul {
+    padding-left: 0px;
+  }
+  .page-palette__menu li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 20px 0px 20px 0px;
+  }
+  .page-palette__menu--design {
+    width: 80%;
+    text-align: left;
+  }
+  .page-palette__menu--tarif {
+    width: 10%;
+    text-align: right;
+    font-weight: bold;
+  }
+  .page-palette__menu--designf {
+    width: 90%;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-palette h1 {
+    margin: 40px 10px 40px 10px;
+    font-size: 6vw;
+  }
+  .page-palette__rubrique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2.2vw;
+    margin-bottom: 20px;
+  }
+  .page-palette__menu {
+    font-family: "Kalam", cursive;
+    font-size: 2.5vw;
+    width: 100%;
+    margin: auto auto 40px auto;
+  }
+  .page-palette__menu ul {
+    padding-left: 0px;
+  }
+  .page-palette__menu li {
+    display: inline-block;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .page-palette__menu--design {
+    width: 80%;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+  }
+  .page-palette__menu--tarif {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+  .page-palette__menu--designf {
+    width: 90%;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+  }
+}
 .legal {
   display: block;
   flex-direction: column;
