@@ -1,0 +1,43 @@
+.titre{
+  @include titre;
+}
+
+.page-palette{
+  @include centrage-colonne;
+  @include menucouleur($font-page, $color-fond-palette);
+  
+  & h1{
+    @include degrade-menu($font-palette);
+    background-image: linear-gradient(0.3turn, $color-palette-deb 30%, $color-palette-fin 80%);
+    margin: 80px 20px 80px 20px;
+    font-size: 4rem;
+  }
+    &__rubrique{
+      @include centragecategorie;
+      & h3{
+        font-weight: lighter;
+      }
+      
+      & .liseret-g {
+        @include taille-liseret-g(15);
+      }
+      & .liseret-d {
+        @include taille-liseret-d(15);
+      }
+    }
+    &__menu{
+      @include centragecontenue($font-page, 65%);
+    }
+
+}
+.categorie{
+  &__palette1{
+  @include souligne($color-palette-deb);
+  }
+  &__palette2{
+  @include souligne($color-palette-int);
+  }
+  &__palette3{
+  @include souligne($color-palette-fin);
+  }
+}

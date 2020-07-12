@@ -6,7 +6,7 @@
   @include centrage-colonne;
   @include menucouleur($font-page, $color-fond-note);
   & h1, h3{
-    margin: 20px;
+    margin: 80px 20px 80px 20px;
     font-family: $font-note;
     font-size: 4rem;
     color: $color-fonts-note;

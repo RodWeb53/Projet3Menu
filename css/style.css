@@ -253,7 +253,7 @@ main {
   background: #ffdfdb;
 }
 .page-note h1, .page-note h3 {
-  margin: 20px;
+  margin: 80px 20px 80px 20px;
   font-family: "Devonshire", cursive;
   font-size: 4rem;
   color: #3c1218;
@@ -339,7 +339,7 @@ main {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(0.3turn, #a8551e 30%, #6204f8 80%);
-  margin: 20px 20px 80px 20px;
+  margin: 80px 20px 80px 20px;
   font-size: 4rem;
 }
 .page-chic__rubrique {
@@ -501,6 +501,111 @@ main {
 }
 .categorie__delice3 {
   background: linear-gradient(to top, #268afc 0%, #268afc 10%, transparent 10%) no-repeat left bottom/0 100%;
+}
+
+.titre {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.page-palette {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto auto 20px auto;
+  font-family: "Kalam", cursive;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  background: #f8fff8;
+}
+.page-palette h1 {
+  font-family: "Kaushan Script", cursive;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(0.3turn, #12771a 30%, #9bf38b 80%);
+  margin: 80px 20px 80px 20px;
+  font-size: 4rem;
+}
+.page-palette__rubrique {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.page-palette__rubrique h3 {
+  font-weight: lighter;
+}
+.page-palette__rubrique .liseret-g {
+  width: 30%;
+  height: 15;
+  display: inline-block;
+  margin: auto auto auto 0px;
+}
+.page-palette__rubrique .liseret-d {
+  width: 30%;
+  height: 15;
+  display: inline-block;
+  margin: auto 0px auto auto;
+}
+.page-palette__menu {
+  font-family: "Kalam", cursive;
+  font-size: 1.5rem;
+  width: 65%;
+  margin: auto auto 80px auto;
+}
+.page-palette__menu ul {
+  padding-left: 0px;
+}
+.page-palette__menu li {
+  display: inline-block;
+  flex-direction: row;
+  margin: 20px 0px 20px 0px;
+}
+.page-palette__menu--design {
+  width: 79%;
+  text-align: left;
+}
+.page-palette__menu--tarif {
+  width: 20%;
+  text-align: right;
+  font-weight: bold;
+}
+.page-palette__menu--designf {
+  width: 100%;
+  text-align: left;
+}
+
+.categorie__palette1 {
+  background: linear-gradient(to top, #12771a 0%, #12771a 10%, transparent 10%) no-repeat left bottom/0 100%;
+}
+.categorie__palette2 {
+  background: linear-gradient(to top, #518f56 0%, #518f56 10%, transparent 10%) no-repeat left bottom/0 100%;
+}
+.categorie__palette3 {
+  background: linear-gradient(to top, #9bf38b 0%, #9bf38b 10%, transparent 10%) no-repeat left bottom/0 100%;
+}
+
+.legal {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto 40px auto;
+  width: 70%;
+}
+.legal h2 {
+  text-align: center;
+  margin: 15px;
+}
+.legal h3 {
+  margin: 10px;
+}
+.legal p {
+  margin-left: 30px;
+  text-align: justify;
 }
 
 * {
