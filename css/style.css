@@ -43,9 +43,12 @@
   font-size: 3rem;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 767px) {
+  .header {
+    padding: 0.5rem;
+  }
   .header__logo {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 }
 .footer {
@@ -776,6 +779,14 @@ main {
   }
 }
 @media only screen and (max-width: 767px) {
+  .page-note {
+    margin: auto auto 20px auto;
+    font-family: "Kalam", cursive;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: #ffdfdb;
+  }
   .page-note h1, .page-note h3 {
     margin: 40px 10px 40px 10px;
     font-size: 6vw;
@@ -791,12 +802,13 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 2vw;
+    font-size: 3vw;
     margin-bottom: 20px;
+    width: 90%;
   }
   .page-note__menu {
     font-family: "Kalam", cursive;
-    font-size: 3vw;
+    font-size: 4vw;
     width: 100%;
     margin: auto auto 40px auto;
   }
@@ -1006,6 +1018,14 @@ main {
   }
 }
 @media only screen and (max-width: 767px) {
+  .page-chic {
+    margin: auto auto 20px auto;
+    font-family: "Source Serif Pro", serif;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: #fffafe;
+  }
   .page-chic h1 {
     margin: 40px 10px 40px 10px;
     font-size: 5vw;
@@ -1014,12 +1034,13 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 1.8vw;
+    font-size: 2.8vw;
     margin-bottom: 20px;
+    width: 95%;
   }
   .page-chic__menu {
     font-family: "Source Serif Pro", serif;
-    font-size: 2.3vw;
+    font-size: 3.5vw;
     width: 100%;
     margin: auto auto 40px auto;
   }
@@ -1214,6 +1235,14 @@ main {
   }
 }
 @media only screen and (max-width: 767px) {
+  .page-delice {
+    margin: auto auto 20px auto;
+    font-family: "Kalam", cursive;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: #f2f9ff;
+  }
   .page-delice h1 {
     margin: 40px 10px 40px 10px;
     font-size: 6vw;
@@ -1222,12 +1251,13 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 2.2vw;
+    font-size: 3.2vw;
     margin-bottom: 20px;
+    width: 95%;
   }
   .page-delice__menu {
     font-family: "Kalam", cursive;
-    font-size: 2.5vw;
+    font-size: 4vw;
     width: 100%;
     margin: auto auto 40px auto;
   }
@@ -1422,6 +1452,14 @@ main {
   }
 }
 @media only screen and (max-width: 767px) {
+  .page-palette {
+    margin: auto auto 20px auto;
+    font-family: "Kalam", cursive;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: #f8fff8;
+  }
   .page-palette h1 {
     margin: 40px 10px 40px 10px;
     font-size: 6vw;
@@ -1430,12 +1468,13 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 2.2vw;
+    font-size: 3.2vw;
     margin-bottom: 20px;
+    width: 95%;
   }
   .page-palette__menu {
     font-family: "Kalam", cursive;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     width: 100%;
     margin: auto auto 40px auto;
   }

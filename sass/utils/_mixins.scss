@@ -158,10 +158,10 @@
   font-size: $size;
 }
 //centrage du titre dans le menu
-@mixin menucouleur ($police, $couleur) {
+@mixin menucouleur ($police, $couleur, $taille) {
   margin: auto auto 20px auto;
   font-family: $police;
-  width: 80%;
+  width: $taille;
   height: auto;
   text-align: center;
   background: $couleur;

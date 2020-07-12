@@ -4,7 +4,7 @@
 
 .page-note{
   @include centrage-colonne;
-  @include menucouleur($font-page, $color-fond-note);
+  @include menucouleur($font-page, $color-fond-note, 80%);
   & h1, h3{
     margin: 80px 20px 80px 20px;
     font-family: $font-note;
@@ -73,6 +73,7 @@
 
 @media only screen and (max-width: 767px) {
   .page-note{
+    @include menucouleur($font-page, $color-fond-note, 100%);
     & h1, h3{
       margin: 40px 10px 40px 10px;
       font-size: 6vw;
@@ -82,10 +83,11 @@
       font-size: 3rem;
     }
     &__rubrique{
-      @include centragecategorie (2vw, 20px);
+      @include centragecategorie (3vw, 20px);
+      width: 90%;
     }
     &__menu{
-      @include centragecontenuem ($font-page, 100%, 3vw);
+      @include centragecontenuem ($font-page, 100%, 4vw);
     }
   }
 }

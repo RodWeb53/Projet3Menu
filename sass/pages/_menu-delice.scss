@@ -4,7 +4,7 @@
 
 .page-delice{
   @include centrage-colonne;
-  @include menucouleur($font-page, $color-fond-delice);
+  @include menucouleur($font-page, $color-fond-delice, 80%);
   
   & h1{
     @include degrade-menu($font-delice);
@@ -75,15 +75,17 @@
 
 @media only screen and (max-width: 767px) {
   .page-delice{
+    @include menucouleur($font-page, $color-fond-delice, 100%);
     & h1{
       margin: 40px 10px 40px 10px;
       font-size: 6vw;
     }
     &__rubrique{
-      @include centragecategorie (2.2vw, 20px);
+      @include centragecategorie (3.2vw, 20px);
+      width: 95%;
     }
     &__menu{
-      @include centragecontenuem ($font-page, 100%, 2.5vw);
+      @include centragecontenuem ($font-page, 100%, 4vw);
     }
   }
 }
