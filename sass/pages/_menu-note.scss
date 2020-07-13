@@ -18,10 +18,10 @@
     &__rubrique{
       @include centragecategorie (1.5vw, 50px);
       & .liseret-g {
-        @include taille-liseret-g(6);
+        @include taille-liseret-g(6px);
       }
       & .liseret-d {
-        @include taille-liseret-d(6);
+        @include taille-liseret-d(6px);
       }
     }
     &__menu{

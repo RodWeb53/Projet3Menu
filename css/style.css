@@ -597,7 +597,7 @@ main {
   }
 
   .prochain {
-    width: 60%;
+    width: 70%;
     padding: 1rem;
     font-size: 1.3rem;
     padding: 0.5rem;
@@ -642,13 +642,13 @@ main {
 }
 .page-note__rubrique .liseret-g {
   width: 30%;
-  height: 6;
+  height: 6px;
   display: inline-block;
   margin: auto auto auto 0px;
 }
 .page-note__rubrique .liseret-d {
   width: 30%;
-  height: 6;
+  height: 6px;
   display: inline-block;
   margin: auto 0px auto auto;
 }
@@ -871,13 +871,13 @@ main {
 }
 .page-chic__rubrique .liseret-g {
   width: 30%;
-  height: 15;
+  height: 15px;
   display: inline-block;
   margin: auto auto auto 0px;
 }
 .page-chic__rubrique .liseret-d {
   width: 30%;
-  height: 15;
+  height: 15px;
   display: inline-block;
   margin: auto 0px auto auto;
 }
@@ -1106,13 +1106,13 @@ main {
 }
 .page-delice__rubrique .liseret-g {
   width: 30%;
-  height: 15;
+  height: 15px;
   display: inline-block;
   margin: auto auto auto 0px;
 }
 .page-delice__rubrique .liseret-d {
   width: 30%;
-  height: 15;
+  height: 15px;
   display: inline-block;
   margin: auto 0px auto auto;
 }
@@ -1323,13 +1323,13 @@ main {
 }
 .page-palette__rubrique .liseret-g {
   width: 30%;
-  height: 15;
+  height: 15px;
   display: inline-block;
   margin: auto auto auto 0px;
 }
 .page-palette__rubrique .liseret-d {
   width: 30%;
-  height: 15;
+  height: 15px;
   display: inline-block;
   margin: auto 0px auto auto;
 }

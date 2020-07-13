@@ -15,10 +15,10 @@
     &__rubrique{
       @include centragecategorie (1.5vw, 50px);
       & .liseret-g {
-        @include taille-liseret-g(15);
+        @include taille-liseret-g(15px);
       }
       & .liseret-d {
-        @include taille-liseret-d(15);
+        @include taille-liseret-d(15px);
       }
       &--part1 {
         color: $color-chic-deb;

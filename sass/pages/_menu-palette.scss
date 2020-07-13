@@ -19,10 +19,10 @@
       }
       
       & .liseret-g {
-        @include taille-liseret-g(15);
+        @include taille-liseret-g(15px);
       }
       & .liseret-d {
-        @include taille-liseret-d(15);
+        @include taille-liseret-d(15px);
       }
     }
     &__menu{
