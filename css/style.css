@@ -620,6 +620,9 @@ main {
   text-align: center;
   background: #ffdfdb;
 }
+.page-note__fond {
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4);
+}
 .page-note h1, .page-note h3 {
   margin: 80px 20px 80px 20px;
   font-family: "Devonshire", cursive;
@@ -853,6 +856,9 @@ main {
   text-align: center;
   background: #fffafe;
 }
+.page-chic__fond {
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4);
+}
 .page-chic h1 {
   font-family: "Source Serif Pro", serif;
   background-clip: initial;
@@ -1085,6 +1091,9 @@ main {
   text-align: center;
   background: #f2f9ff;
 }
+.page-delice__fond {
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4);
+}
 .page-delice h1 {
   font-family: "Dancing Script", cursive;
   background-clip: initial;
@@ -1301,6 +1310,9 @@ main {
   height: auto;
   text-align: center;
   background: #f8fff8;
+}
+.page-palette__fond {
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4);
 }
 .page-palette h1 {
   font-family: "Kaushan Script", cursive;

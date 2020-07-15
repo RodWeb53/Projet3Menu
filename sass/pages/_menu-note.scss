@@ -5,6 +5,9 @@
 .page-note{
   @include centrage-colonne;
   @include menucouleur($font-page, $color-fond-note, 80%);
+  &__fond{
+    @include bordure-fond;
+  }
   & h1, h3{
     margin: 80px 20px 80px 20px;
     font-family: $font-note;
