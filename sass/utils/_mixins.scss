@@ -69,7 +69,7 @@
     @include centrage-acceuil;
     }
     & h2 {
-      @include degrade-menu($font-chic);
+      @include degrade-menu($font-chic1);
       background-image: linear-gradient(0.3turn, $color-chic-deb 30%, $color-chic-fin 80%);
       }
       & p{

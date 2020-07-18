@@ -20,7 +20,7 @@ main{
       @include acceuil-note(2.5vw);
     }
     &--chic{
-      @include acceuil-chic(2vw);
+      @include acceuil-chic(1.7vw);
     }
     &--delice{
       @include acceuil-delice(2.5vw);
@@ -85,7 +85,7 @@ main{
         @include acceuil-note(3vw);
       }
       &--chic{
-        @include acceuil-chic(2.4vw);
+        @include acceuil-chic(2vw);
       }
       &--delice{
         @include acceuil-delice(3vw);
@@ -145,7 +145,7 @@ main{
         @include acceuil-note(6vw);
       }
       &--chic{
-        @include acceuil-chic(5vw);
+        @include acceuil-chic(4.3vw);
       }
       &--delice{
         @include acceuil-delice(6vw);
